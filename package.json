@@ -1,0 +1,17 @@
+{
+  "name": "shmdoc",
+  "version": "0.0.0",
+  "description": "project to analyze data to extract a schema to document and maintain",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test*.js"
+  },
+  "author": "Marc Portier",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.2.1",
+    "chai": "^3.0.0",
+    "moment": "^2.10.3",
+    "yargs": "^3.9.1"
+  }
+}
