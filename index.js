@@ -13,14 +13,22 @@ var sd = require('./lib/shmdoc'),
 
 settings = argv
     .usage('Guards the schema-documentation of a given data-set.\nUsage: $0')
-    .example('$0  -f _schmdoc.json secret datafile1 [datafile2 ...]', 'Produces a _schmdoc_new.json next to the -f file location.')
+    .example('$0  -b ./.schmdoc.json datafile1 [datafile2 ...]', 'Reads the current base schema-doc file, checks and augments with data found in the datafiles and writes a ./.schmdoc-report.json in the current working dir.')
 
-    .describe('file', 'file containing the managed schema-documentation')
-    .alias('f', 'file')
-    .default('file', '_shmdoc.json')
+    .describe('base', 'base-file containing the managed schema-documentation - can be uri - can be csv format')
+    .alias('b', 'base')
+    .default('base', './.shmdoc.json')
+
+    .describe('report', 'location where to put the resulting report.')
+    .alias('r', 'report')
+    .default('report', './.shmdoc-report.json')
+
+    .describe('level', 'number of root-levels to hide from the keys')
+    .alias('l', 'level')
+    .default('level', 1)
 
     .demand(1)
 
     .argv;
 
-sd.process(settings._, settings.file);
+sd.process(settings._, settings.level, settings.base, settings.report);
