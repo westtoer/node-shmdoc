@@ -1,0 +1,49 @@
+<!-- Use a templated HTML printing scriptlet to import common stylesheet. -->
+<?!= HtmlService.createHtmlOutputFromFile('Stylesheet').getContent(); ?>
+
+<!-- Below is the HTML code that defines the sidebar element structure. -->
+<div class="sidebar branding-below">
+  <p>Use this sidebar to read information collected by the <a href="https://github.com/westtoer/node-shmdoc">shmdoc</a> robot in one of two ways:
+  </p>
+
+  <h2><input type="checkbox" id="sb-chk-live" checked> Option 1. Linked via the web</h2>
+  <div class="block" id="sb-opt-link">
+    <div class="block form-group" id="sb-link-uri">
+      <label for="sb-uri">HRef/URI:</label>
+      <input id="sb-uri" value="" placeholder="https://server/path/.shmdoc-report.json" class="width-100">
+      <label for="sb-usr">(optional) Basic Auth Username:</label>
+      <input id="sb-usr" value="" placeholder="username" class="width-100">
+      <label for="sb-pwd">(optional) Basi Auth Password:</label>
+      <input id="sb-pwd" value="" placeholder="password" class="width-100" type="password">
+      <input type="checkbox" id="sb-keep" checked >
+      <label for="sb-keep">Rememeber these settings (hidden)</label>
+    </div>
+    <div class="block" id="sb-btnbar-link">
+      <button id="sb-btn-live">Get &amp; Merge</button>
+    </div>
+  </div>
+
+  <h2><input type="checkbox" id="sb-chk-manu"> Option 2. Manually by copy-pasting the shmdoc-report-json</h2>
+  <div class="block" id="sb-opt-manu">
+    <div class="block form-group" id="sb-manu-json">
+      <label for="sb-json">JSON:</label>
+      <textarea id="sb-json" class="width-100" placeholder="Copy/Paste your shmdoc-report.json here."></textarea>
+    </div>
+    <div class="block form-group" id="sb-btnbar-manu">
+      <button id="sb-btn-manu">Send &amp; Merge</button>
+    </div>
+  </div>
+
+  <hr />
+
+  <pre id="sb-status"></pre>
+</div>
+
+<!-- Enter sidebar bottom-branding below. -->
+<div class="sidebar bottom">
+  <p class="gray branding-text">For more on shmdoc <a href="https://github.com/westtoer/node-shmdoc">visit us @github</a></p>
+  <p class="gray branding-text">&copy; 2015, <a href="https://plus.google.com/+westtoer">Westtoer</a> by <a href="https://plus.google.com/+MarcPortier">Marc Portier</a>.</p>
+</div>
+
+<!-- Use a templated HTML printing scriptlet to import JavaScript. -->
+<?!= HtmlService.createHtmlOutputFromFile('ConfigSidebarJavaScript').getContent(); ?>

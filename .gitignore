@@ -2,6 +2,11 @@
 *.sh
 tmp/
 
+
+# suggested for gaps
+.manifest.json
+
+
 # Logs
 logs
 *.log
