@@ -218,9 +218,6 @@ function mergeData(base, uri) {
                 setVal(rowvalues, "max-len"         , fd.maxlen);
             }
 
-            // after one round-trip force learnable back to false
-            setVal(rowvalues, "learnable"           , false);
-
             // write
             cursor.setValues([rowvalues]);
             result.mergedkeys += 1;
@@ -229,7 +226,7 @@ function mergeData(base, uri) {
         // --> add rows for new keys
             rowvalues = Array.apply(null, Array(currentDataRange.getNumColumns())).map(String.prototype.valueOf,""); // correct length, filled with empty values ""
             // assemble new row-value --> add at end
-            // key	learnable	type	type-counts	format	example-value	min-value	max-value	min-len	max-len	use-count	nullable	created	updated
+            // key	type	type-counts	format	example-value	min-value	max-value	min-len	max-len	use-count	nullable	created	updated
             setVal(rowvalues, "key"             , fd.key);
             setVal(rowvalues, "type"            , fd.type);
             setVal(rowvalues, "type-counts"     , JSON.stringify(fd.count.bytype));
