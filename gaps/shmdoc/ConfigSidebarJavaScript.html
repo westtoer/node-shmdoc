@@ -47,7 +47,7 @@ function callReturn(pfx, cls) {
     return function (msg, element) {
         clearStatus();
         if (cls === 'success') {
-            msg = msg + JSON.stringify(msg, undefined, 4);
+            msg = JSON.stringify(msg, undefined, 4);
         }
         showStatus(pfx + msg, cls);
         element.disabled = false;
