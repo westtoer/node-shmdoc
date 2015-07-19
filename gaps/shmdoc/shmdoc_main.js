@@ -80,6 +80,14 @@ function onInstall(e) {
 
 function mergeData(base, uri) {
     var LIMIT = 1024, // never make this bigger then 5000 --> that is the hard limit in google spreadsheets
+        DEFAULTCOLS = [
+          "key", "type", "type-counts", "format", "example-value", "min-value", "max-value", "min-len", "max-len",
+          "use-count", "nullable", "created", "updated",
+          "newvalue-errors", "boundary-errors", "type-errors", "reference-errors", "text-errors",
+          "isReferenceToKey", "value-list",
+          "value-list-semantics", "missing-semantics", "null-semantics",
+          "description", "recommended use", "user reference", "remarks", "rdf"
+        ],
         result = {},
         keys,
         currentKeys,
@@ -94,8 +102,11 @@ function mergeData(base, uri) {
     // the main work
     currentDataRange = SpreadsheetApp.getActiveSheet().getDataRange();
     //TODO handle the case of new empty sheet --> empty datarange
-    // create a sample first row!!!
-    // then update the currentDataRange
+    if ( currentDataRange.getNumColumns() === 1 && currentDataRange.getNumRows() === 1 && currentDataRange.getValue() === "") {
+        // there is no data in the sheet, so let's make some
+        currentDataRange = currentDataRange.offset(0, 0, 1, DEFAULTCOLS.length);
+        currentDataRange.setValues([DEFAULTCOLS]);
+    };
 
 
     // read the first line
@@ -105,7 +116,6 @@ function mergeData(base, uri) {
     currentFieldToCol = currentFields.reduce(function (s, el, i) {  s[el] = i; return s; }, {});
     result.foundcols = Object.keys(currentFieldToCol).length;
 
-
     // check the existence of a key column.
     if (!currentFieldToCol.hasOwnProperty('key')) {
         throw "there should at least be a column labeled 'key'";
@@ -113,13 +123,13 @@ function mergeData(base, uri) {
 
     // TODO check for other absolutely required columns: type
 
-
-
     // read the key column
-    cursor = currentDataRange.offset(currentFieldToCol.key, 0, currentDataRange.getNumRows() - 1, 1); // first col without first row
-    currentKeys = cursor.getValues().map(function (el) { return el[0]; });
-    // --> find all the known keys --> by key to row-number
-    currentKeyToRow = currentKeys.reduce(function (s, el, i) {  s[el] = i + 1; return s; }, {});
+    if (currentDataRange.getNumRows() > 1) {
+        cursor = currentDataRange.offset(currentFieldToCol.key, 0, currentDataRange.getNumRows() - 1, 1); // first col without first row
+        currentKeys = cursor.getValues().map(function (el) { return el[0]; });
+        // --> find all the known keys --> by key to row-number
+        currentKeyToRow = currentKeys.reduce(function (s, el, i) {  s[el] = i + 1; return s; }, {});
+    }
     result.foundkeys = Object.keys(currentKeyToRow).length;
 
     // prepare some helper functions
