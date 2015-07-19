@@ -111,7 +111,7 @@ function mergeData(base, uri) {
         throw "there should at least be a column labeled 'key'";
     }
 
-    // TODO check for other absolutely required columns.
+    // TODO check for other absolutely required columns: type
 
 
 
@@ -144,6 +144,7 @@ function mergeData(base, uri) {
     // process all the keys in the base
     keys.forEach(function (key) {
         var fd = base[key], rownum = currentKeyToRow[key], rowvalues;
+        fd.count = fd.count || {};
 
         if (rownum !== undefined) {
         // --> merge new information for known keys
@@ -206,7 +207,7 @@ function mergeData(base, uri) {
         }
     });
 
-    return JSON.stringify(result, undefined, 4); // TODO --> check if we need to stringify?
+    return result;
 }
 
 function mergeFromJSON(json, uri) {
@@ -245,11 +246,10 @@ function syncMerge() {
     var linkArgs = getSheetProp("shmdoc.link"), result;
     if (!linkArgs || !linkArgs.uri) {
         showConfig();
-        //TODO some user feedback about no settings available...
         throw "there are no saved settings to automatically sync the shmdoc --> use the settings pannel first.";
 
     } //else
 
     result = mergeFromURI(linkArgs.uri, linkArgs.headers, false);
-    //TODO think about using the result in feedback to the user
+    Browser.msgBox("Sync & Merge completed: " + JSON.stringify(result, undefined, 4));
 }
