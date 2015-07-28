@@ -128,7 +128,7 @@ function mergeData(base, uri) {
         cursor = currentDataRange.offset(currentFieldToCol.key, 0, currentDataRange.getNumRows() - 1, 1); // first col without first row
         currentKeys = cursor.getValues().map(function (el) { return el[0]; });
         // --> find all the known keys --> by key to row-number
-        currentKeyToRow = currentKeys.reduce(function (s, el, i) {  s[el] = i + 1; return s; }, {});
+        currentKeyToRow = currentKeys.reduce(function (s, el, i) {  s[el] = i; return s; }, {});
     }
     result.foundkeys = Object.keys(currentKeyToRow).length;
 
