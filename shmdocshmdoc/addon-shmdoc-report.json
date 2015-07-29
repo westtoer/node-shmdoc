@@ -3,7 +3,7 @@
         "key": "*.boundary-errors",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -18,7 +18,7 @@
         "minlen": "24",
         "maxlen": "24",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -33,7 +33,7 @@
         "key": "*.description",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -48,7 +48,7 @@
         "key": "*.example-value",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -67,7 +67,7 @@
         "key": "*.format",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -80,7 +80,7 @@
         "key": "*.isReferenceToKey",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -96,7 +96,7 @@
         "key": "*.key",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -113,7 +113,7 @@
         "min": null,
         "max": null,
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -129,7 +129,7 @@
         "key": "*.max-value",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -147,7 +147,7 @@
         "min": null,
         "max": null,
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -163,7 +163,7 @@
         "key": "*.min-value",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -180,7 +180,7 @@
         "key": "*.missing-semantics",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -193,7 +193,7 @@
         "key": "*.newvalue-errors",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -206,7 +206,7 @@
         "key": "*.null-semantics",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -219,7 +219,7 @@
         "key": "*.nullable",
         "type": "boolean",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -235,7 +235,7 @@
         "key": "*.rdf",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -248,7 +248,7 @@
         "key": "*.recommended use",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -264,7 +264,7 @@
         "key": "*.reference-errors",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -277,7 +277,7 @@
         "key": "*.remarks",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -290,7 +290,7 @@
         "key": "*.text-errors",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -305,7 +305,7 @@
         "min": "boolean",
         "max": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "list": [
             "boolean",
@@ -329,7 +329,7 @@
         "key": "*.type-counts",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -345,7 +345,7 @@
         "key": "*.type-errors",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -363,7 +363,7 @@
         "minlen": "24",
         "maxlen": "24",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -381,7 +381,7 @@
         "min": null,
         "max": null,
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -398,7 +398,7 @@
         "key": "*.user reference",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -411,7 +411,7 @@
         "key": "*.value-list",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,
@@ -427,7 +427,7 @@
         "key": "*.value-list-semantics",
         "type": "text",
         "created": "2015-07-28T20:02:06.771Z",
-        "updated": "2015-07-29T05:23:49.775Z",
+        "updated": "2015-07-29T06:04:49.538Z",
         "isReferenceable": false,
         "count": {
             "used": 55,

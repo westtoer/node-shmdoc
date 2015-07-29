@@ -5,30 +5,17 @@
         "min": 0,
         "max": null,
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 14,
             "empty": 0,
             "bytype": {
-                "text": 12,
+                "integer": 12,
                 "boolean": 2
             }
         },
-        "example": 4,
-        "errors": {
-            "type": [
-                4,
-                9,
-                27,
-                3,
-                2,
-                6,
-                23,
-                57,
-                28
-            ]
-        }
+        "example": 4
     },
     "*.count.bytype.date": {
         "key": "*.count.bytype.date",
@@ -45,27 +32,17 @@
         "min": 0,
         "max": null,
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 9,
             "empty": 0,
             "bytype": {
-                "text": 7,
+                "integer": 7,
                 "boolean": 2
             }
         },
-        "example": 55,
-        "errors": {
-            "type": [
-                55,
-                6,
-                53,
-                57,
-                3,
-                7
-            ]
-        }
+        "example": 55
     },
     "*.count.bytype.integer": {
         "key": "*.count.bytype.integer",
@@ -73,25 +50,16 @@
         "min": 0,
         "max": null,
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 7,
             "empty": 0,
             "bytype": {
-                "text": 7
+                "integer": 7
             }
         },
-        "example": 13,
-        "errors": {
-            "type": [
-                13,
-                3,
-                47,
-                5,
-                4
-            ]
-        }
+        "example": 13
     },
     "*.count.bytype.number": {
         "key": "*.count.bytype.number",
@@ -108,37 +76,17 @@
         "min": 0,
         "max": null,
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 25,
             "empty": 0,
             "bytype": {
-                "text": 19,
+                "integer": 19,
                 "boolean": 6
             }
         },
-        "example": 55,
-        "errors": {
-            "type": [
-                55,
-                13,
-                4,
-                48,
-                6,
-                2,
-                12,
-                9,
-                7,
-                18,
-                27,
-                49,
-                62,
-                22,
-                57,
-                14
-            ]
-        }
+        "example": 55
     },
     "*.count.bytype.time": {
         "key": "*.count.bytype.time",
@@ -155,34 +103,17 @@
         "min": 0,
         "max": null,
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 50,
             "empty": 0,
             "bytype": {
-                "text": 27,
+                "integer": 27,
                 "boolean": 23
             }
         },
-        "example": 55,
-        "errors": {
-            "type": [
-                55,
-                19,
-                54,
-                52,
-                45,
-                28,
-                51,
-                7,
-                49,
-                2,
-                53,
-                14,
-                5
-            ]
-        }
+        "example": 55
     },
     "*.count.used": {
         "key": "*.count.used",
@@ -190,36 +121,17 @@
         "min": 0,
         "max": null,
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 50,
             "empty": 0,
             "bytype": {
-                "text": 49,
+                "integer": 49,
                 "boolean": 1
             }
         },
-        "example": 55,
-        "errors": {
-            "type": [
-                55,
-                15,
-                11,
-                7,
-                24,
-                50,
-                57,
-                3,
-                62,
-                38,
-                14,
-                16,
-                4,
-                28,
-                2
-            ]
-        }
+        "example": 55
     },
     "*.created": {
         "key": "*.created",
@@ -227,7 +139,7 @@
         "minlen": "24",
         "maxlen": "28",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 57,
@@ -242,16 +154,8 @@
         "key": "*.errors.boundary.*",
         "type": "text",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
-        "isReferenceable": false,
-        "count": {
-            "used": 3,
-            "empty": 0,
-            "bytype": {
-                "datetime": 3
-            }
-        },
-        "example": "2015-07-28T20:41:04.566Z"
+        "updated": "2015-07-28T20:40:15.544Z",
+        "isReferenceable": false
     },
     "*.errors.text.*": {
         "key": "*.errors.text.*",
@@ -264,13 +168,13 @@
         "key": "*.errors.type.*",
         "type": "text",
         "created": "2015-07-28T20:35:35.518Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
-            "used": 63,
+            "used": 64,
             "empty": 0,
             "bytype": {
-                "text": 63
+                "integer": 64
             }
         },
         "example": 4
@@ -293,15 +197,15 @@
         "key": "*.example",
         "type": "text",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 39,
             "empty": 0,
             "bytype": {
                 "datetime": 7,
-                "text": 23,
-                "integer": 5,
+                "text": 16,
+                "integer": 12,
                 "boolean": 4
             }
         },
@@ -318,7 +222,7 @@
         "key": "*.isReferenceable",
         "type": "boolean",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 57,
@@ -333,7 +237,7 @@
         "key": "*.isReferenceToKey",
         "type": "text",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceToKey": "*.key",
         "isReferenceable": false,
         "count": {
@@ -350,7 +254,7 @@
         "key": "*.key",
         "type": "text",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": true,
         "count": {
             "used": 57,
@@ -366,7 +270,7 @@
         "key": "*.list.*",
         "type": "text",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 14,
@@ -381,14 +285,13 @@
         "key": "*.max",
         "type": "text",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
-            "used": 16,
+            "used": 15,
             "empty": 14,
             "bytype": {
-                "text": 1,
-                "datetime": 1
+                "text": 1
             }
         },
         "nullable": true,
@@ -400,7 +303,7 @@
         "min": null,
         "max": null,
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 4,
@@ -415,15 +318,14 @@
         "key": "*.min",
         "type": "text",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
-            "used": 16,
+            "used": 15,
             "empty": 5,
             "bytype": {
                 "text": 1,
-                "boolean": 9,
-                "datetime": 1
+                "boolean": 9
             }
         },
         "nullable": true,
@@ -435,7 +337,7 @@
         "min": null,
         "max": null,
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 4,
@@ -450,7 +352,7 @@
         "key": "*.nullable",
         "type": "boolean",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 27,
@@ -465,7 +367,7 @@
         "key": "*.type",
         "type": "text",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "list": [
             "boolean",
@@ -477,10 +379,10 @@
             "text"
         ],
         "count": {
-            "used": 56,
+            "used": 57,
             "empty": 0,
             "bytype": {
-                "text": 56
+                "text": 57
             }
         },
         "example": "text"
@@ -489,7 +391,7 @@
         "key": "*.unique",
         "type": "boolean",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 2,
@@ -506,7 +408,7 @@
         "minlen": "24",
         "maxlen": "28",
         "created": "2015-07-19T16:48:32.542Z",
-        "updated": "2015-07-29T05:23:50.611Z",
+        "updated": "2015-07-29T06:04:50.384Z",
         "isReferenceable": false,
         "count": {
             "used": 57,
@@ -515,7 +417,7 @@
                 "datetime": 55
             }
         },
-        "example": "2015-07-29T05:23:49.775Z",
+        "example": "2015-07-29T06:04:49.538Z",
         "nullable": true
     }
 }

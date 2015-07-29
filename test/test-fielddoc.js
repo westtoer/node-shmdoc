@@ -73,8 +73,8 @@ describe('value analyzer', function () {
             tobj.datetime =  "2015-07-15T10:28:32Z";
             tobj.date = "2015-07-15";
             tobj.time = "08:30:15+02:00";
-            tobj.number = "15.2";
-            tobj.integer = "15.0";
+            tobj.number = 15.2;
+            tobj.integer = 2.0;
             tobj.text = "foobar";
 
             return Object.keys(tobj).reduce(function (types, type) {types[type] = type; return types; }, {});
@@ -82,7 +82,7 @@ describe('value analyzer', function () {
     });
 
     it('should count use and empty correctly', function () {
-        var sd = new SchemaDoc(), tobj = [{x: 1, y: 1}, {x: 1, y: ""}, {x: 1} ],
+        var sd = new SchemaDoc(), tobj = [{x: 2, y: 2}, {x: 2, y: ""}, {x: 2} ],
             baseKeys;
 
         sd.traverseValue([], tobj);
