@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<container>
+    <record boolean="true">
+        <datetime>2015-07-28T20:02:06.771Z</datetime>
+        <integer>23</integer>
+        <text>Ik ben vandaag zo vrolijk, zo vrolijk, zo vrolijk.</text>
+    </record>
+    <record boolean="error">
+        <datetime>eergisteren</datetime>
+        <integer>2.3</integer>
+        <text> Ik ben behoorlijk vrolijk </text>
+    </record>
+</container>

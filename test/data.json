@@ -1,0 +1,14 @@
+[
+    {
+        "@boolean": true,
+        "datetime": "2015-07-28T20:02:06.771Z",
+        "integer":  23,
+        "text":     "Ik ben vandaag zo vrolijk, zo vrolijk, zo vrolijk."
+    },
+    {
+        "@boolean": "error",
+        "datetime": "eergisteren",
+        "integer":  2.3,
+        "text":     " Ik ben behoorlijk vrolijk "
+    }
+]

@@ -140,15 +140,118 @@ describe('value analyzer', function () {
         assert.ok(sd.base["*.y"].learnable, "learnable mode for *.y");
         assert.equal(sd.base["*.y"].minlen, 2, "min for *.y");
         assert.equal(sd.base["*.y"].maxlen, 5, "max for *.y");
-
     });
 
-    it('should report errors of new-values correctly');
+    it('should report errors of new-values correctly', function () {
+        var sd = new SchemaDoc(), tobj = [{x: "a"}, {x: "b"}, {x: "x"} ];
 
-    it('should report errors of boundaries correctly');
+        sd.setBase({"*.x": {"type": "text", "list": ["a", "b"]}});
+        assert.isNotNull(sd.base["*.x"], "key to check should be set");
+        assert.ok(!sd.base["*.x"].learnable, "learnable mode for *.x");
 
-    it('should report errors of type correctly');
+        sd.traverseValue([], tobj);
+        assert.isNotNull(sd.base,
+                         "internal base should exist");
 
-    it('should report errors of references correctly');
+        assert.ok(!sd.base["*.x"].learnable, "learnable mode for *.x");
+        assert.deepEqual(
+            sd.base["*.x"].count,
+            {used: 3, empty: 0, bytype: {text: 3}},
+            "unexpected usage/empty count for *.x"
+        );
+        assert.deepEqual(
+            sd.base["*.x"].errors,
+            {newval: ["x"]},
+            "unexpected error-report for *.x"
+        );
+    });
+
+    it('should report errors of boundaries correctly', function () {
+        var sd = new SchemaDoc(), tobj = [{x: -1}, {x: 2}, {x: 10} ];
+
+        sd.setBase({"*.x": {"type": "integer", "min": 2, "max": 5}});
+        assert.isNotNull(sd.base["*.x"], "key to check should be set");
+        assert.ok(!sd.base["*.x"].learnable, "learnable mode for *.x");
+
+        sd.traverseValue([], tobj);
+        assert.isNotNull(sd.base,
+                         "internal base should exist");
+
+        assert.ok(!sd.base["*.x"].learnable, "learnable mode for *.x");
+        assert.deepEqual(
+            sd.base["*.x"].count,
+            {used: 3, empty: 0, bytype: {integer: 3}},
+            "unexpected usage/empty count for *.x"
+        );
+        assert.deepEqual(
+            sd.base["*.x"].errors,
+            {boundary: [-1, 10]},
+            "unexpected error-report for *.x"
+        );
+    });
+
+    it('should report errors of type correctly', function () {
+        var sd = new SchemaDoc(), tobj = [{x: 0}, {x: 2}, {x: "bla"} ];
+
+        sd.setBase({"*.x": {"type": "boolean"}});
+        assert.isNotNull(sd.base["*.x"], "key to check should be set");
+        assert.ok(!sd.base["*.x"].learnable, "learnable mode for *.x");
+
+        sd.traverseValue([], tobj);
+        assert.isNotNull(sd.base,
+                         "internal base should exist");
+
+        assert.ok(!sd.base["*.x"].learnable, "learnable mode for *.x");
+        assert.deepEqual(
+            sd.base["*.x"].count,
+            {used: 3, empty: 0, bytype: {boolean: 1, integer: 1, text: 1}},
+            "unexpected usage/empty count for *.x"
+        );
+        assert.deepEqual(
+            sd.base["*.x"].errors,
+            {type: [2, "bla"]},
+            "unexpected error-report for *.x"
+        );
+    });
+
+    it('should report errors of references correctly', function () {
+        var sd = new SchemaDoc(), tobj = [{id: 101}, {id: 102, ref: 101}, {id: 103, ref: 1000} ];
+
+        sd.setBase({
+            "*.id": {},
+            "*.ref": {"type": "integer", "isReferenceToKey": "*.id"}
+        });
+        assert.isNotNull(sd.base["*.id"], "key to check should be set");
+        assert.isNotNull(sd.base["*.ref"], "key to check should be set");
+        assert.ok(sd.base["*.id"].learnable, "learnable mode for *.id before traversal");
+        assert.ok(sd.base["*.id"].isReferenceable, "referenceable mode for *.id");
+        assert.ok(!sd.base["*.ref"].learnable, "learnable mode for *.ref before traversal");
+
+        sd.traverseValue([], tobj);
+        assert.ok(sd.base["*.id"].learnable, "learnable mode for *.id after traversal");
+        assert.ok(!sd.base["*.ref"].learnable, "learnable mode for *.ref after traversal");
+        assert.isNotNull(sd.base,
+                         "internal base should exist");
+
+        //only in the report phase the refe errors are assembled
+        sd.report();
+
+        assert.deepEqual(
+            sd.base["*.id"].count,
+            {used: 3, empty: 0, bytype: {integer: 3}},
+            "unexpected usage/empty count for *.id"
+        );
+        assert.deepEqual(
+            sd.base["*.ref"].count,
+            {used: 2, empty: 0, bytype: {integer: 2}},
+            "unexpected usage/empty count for *.ref"
+        );
+        assert.isUndefined(sd.base["*.id"].errors, "should be no errors in the target.");
+        assert.deepEqual(
+            sd.base["*.ref"].errors,
+            {reference: ["1st unmatched ref value: " + 1000]},
+            "unexpected error-report for *.ref"
+        );
+    });
 
 });
