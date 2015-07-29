@@ -1,0 +1,2 @@
+key,type,type-counts,format,example-value,min-value,max-value,min-len,max-len,use-count,nullable,created,updated,newvalue-errors,boundary-errors,type-errors,reference-errors,text-errors,isReferenceToKey,value-list,value-list-semantics,missing-semantics,null-semantics,description,recommended use,user reference,remarks,rdf
+testkey,text,{},,testexample,a,z,1,100,,,,,,,,,,,,,,,,,,,
