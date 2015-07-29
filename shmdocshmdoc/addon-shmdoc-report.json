@@ -1,0 +1,439 @@
+{
+    "*.boundary-errors": {
+        "key": "*.boundary-errors",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.created": {
+        "key": "*.created",
+        "type": "datetime",
+        "minlen": "24",
+        "maxlen": "24",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 0,
+            "bytype": {
+                "datetime": 55
+            }
+        },
+        "example": "2015-07-28T20:02:06.771Z"
+    },
+    "*.description": {
+        "key": "*.description",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 0,
+            "bytype": {
+                "text": 55
+            }
+        },
+        "example": "Detected min-max transgression errors"
+    },
+    "*.example-value": {
+        "key": "*.example-value",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 19,
+            "bytype": {
+                "datetime": 6,
+                "text": 13,
+                "integer": 13,
+                "boolean": 4
+            }
+        },
+        "nullable": true,
+        "example": "2015-07-19T16:48:32.542Z"
+    },
+    "*.format": {
+        "key": "*.format",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.isReferenceToKey": {
+        "key": "*.isReferenceToKey",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 54,
+            "bytype": {
+                "text": 1
+            }
+        },
+        "nullable": true,
+        "example": "*.key"
+    },
+    "*.key": {
+        "key": "*.key",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 0,
+            "bytype": {
+                "text": 55
+            }
+        },
+        "example": "*.boundary-errors"
+    },
+    "*.max-len": {
+        "key": "*.max-len",
+        "type": "integer",
+        "min": null,
+        "max": null,
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 52,
+            "bytype": {
+                "integer": 3
+            }
+        },
+        "nullable": true,
+        "example": "24"
+    },
+    "*.max-value": {
+        "key": "*.max-value",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 54,
+            "bytype": {
+                "text": 1
+            }
+        },
+        "nullable": true,
+        "example": "text"
+    },
+    "*.min-len": {
+        "key": "*.min-len",
+        "type": "integer",
+        "min": null,
+        "max": null,
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 52,
+            "bytype": {
+                "integer": 3
+            }
+        },
+        "nullable": true,
+        "example": "24"
+    },
+    "*.min-value": {
+        "key": "*.min-value",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 45,
+            "bytype": {
+                "text": 1,
+                "boolean": 9
+            }
+        },
+        "nullable": true,
+        "example": "boolean"
+    },
+    "*.missing-semantics": {
+        "key": "*.missing-semantics",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.newvalue-errors": {
+        "key": "*.newvalue-errors",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.null-semantics": {
+        "key": "*.null-semantics",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.nullable": {
+        "key": "*.nullable",
+        "type": "boolean",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 28,
+            "bytype": {
+                "boolean": 27
+            }
+        },
+        "example": "TRUE",
+        "nullable": true
+    },
+    "*.rdf": {
+        "key": "*.rdf",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.recommended use": {
+        "key": "*.recommended use",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 51,
+            "bytype": {
+                "text": 4
+            }
+        },
+        "nullable": true,
+        "example": "Use this field to report boundary-value-errors"
+    },
+    "*.reference-errors": {
+        "key": "*.reference-errors",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.remarks": {
+        "key": "*.remarks",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.text-errors": {
+        "key": "*.text-errors",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.type": {
+        "key": "*.type",
+        "type": "text",
+        "min": "boolean",
+        "max": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "list": [
+            "boolean",
+            "date",
+            "time",
+            "datetime",
+            "integer",
+            "number",
+            "text"
+        ],
+        "count": {
+            "used": 55,
+            "empty": 0,
+            "bytype": {
+                "text": 55
+            }
+        },
+        "example": "text"
+    },
+    "*.type-counts": {
+        "key": "*.type-counts",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 7,
+            "bytype": {
+                "text": 48
+            }
+        },
+        "example": "{}",
+        "nullable": true
+    },
+    "*.type-errors": {
+        "key": "*.type-errors",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 49,
+            "bytype": {
+                "text": 6
+            }
+        },
+        "nullable": true,
+        "example": "4|9|27|2|6|22|57|29"
+    },
+    "*.updated": {
+        "key": "*.updated",
+        "type": "datetime",
+        "minlen": "24",
+        "maxlen": "24",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 2,
+            "bytype": {
+                "datetime": 53
+            }
+        },
+        "example": "2015-07-28T20:02:06.771Z",
+        "nullable": true
+    },
+    "*.use-count": {
+        "key": "*.use-count",
+        "type": "integer",
+        "min": null,
+        "max": null,
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 7,
+            "bytype": {
+                "integer": 47,
+                "boolean": 1
+            }
+        },
+        "example": "28",
+        "nullable": true
+    },
+    "*.user reference": {
+        "key": "*.user reference",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    },
+    "*.value-list": {
+        "key": "*.value-list",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 53,
+            "bytype": {
+                "text": 2
+            }
+        },
+        "nullable": true,
+        "example": "boolean|date|time|datetime|integer|number|text"
+    },
+    "*.value-list-semantics": {
+        "key": "*.value-list-semantics",
+        "type": "text",
+        "created": "2015-07-28T20:02:06.771Z",
+        "updated": "2015-07-29T05:23:49.775Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 55,
+            "empty": 55,
+            "bytype": {}
+        },
+        "nullable": true
+    }
+}

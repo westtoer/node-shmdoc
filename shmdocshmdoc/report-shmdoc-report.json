@@ -1,0 +1,521 @@
+{
+    "*.count.bytype.boolean": {
+        "key": "*.count.bytype.boolean",
+        "type": "integer",
+        "min": 0,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 14,
+            "empty": 0,
+            "bytype": {
+                "text": 12,
+                "boolean": 2
+            }
+        },
+        "example": 4,
+        "errors": {
+            "type": [
+                4,
+                9,
+                27,
+                3,
+                2,
+                6,
+                23,
+                57,
+                28
+            ]
+        }
+    },
+    "*.count.bytype.date": {
+        "key": "*.count.bytype.date",
+        "type": "integer",
+        "min": 0,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-19T16:48:32.542Z",
+        "isReferenceable": false
+    },
+    "*.count.bytype.datetime": {
+        "key": "*.count.bytype.datetime",
+        "type": "integer",
+        "min": 0,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 9,
+            "empty": 0,
+            "bytype": {
+                "text": 7,
+                "boolean": 2
+            }
+        },
+        "example": 55,
+        "errors": {
+            "type": [
+                55,
+                6,
+                53,
+                57,
+                3,
+                7
+            ]
+        }
+    },
+    "*.count.bytype.integer": {
+        "key": "*.count.bytype.integer",
+        "type": "integer",
+        "min": 0,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 7,
+            "empty": 0,
+            "bytype": {
+                "text": 7
+            }
+        },
+        "example": 13,
+        "errors": {
+            "type": [
+                13,
+                3,
+                47,
+                5,
+                4
+            ]
+        }
+    },
+    "*.count.bytype.number": {
+        "key": "*.count.bytype.number",
+        "type": "integer",
+        "min": 0,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-19T16:48:32.542Z",
+        "isReferenceable": false
+    },
+    "*.count.bytype.text": {
+        "key": "*.count.bytype.text",
+        "type": "integer",
+        "min": 0,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 25,
+            "empty": 0,
+            "bytype": {
+                "text": 19,
+                "boolean": 6
+            }
+        },
+        "example": 55,
+        "errors": {
+            "type": [
+                55,
+                13,
+                4,
+                48,
+                6,
+                2,
+                12,
+                9,
+                7,
+                18,
+                27,
+                49,
+                62,
+                22,
+                57,
+                14
+            ]
+        }
+    },
+    "*.count.bytype.time": {
+        "key": "*.count.bytype.time",
+        "type": "integer",
+        "min": 0,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-19T16:48:32.542Z",
+        "isReferenceable": false
+    },
+    "*.count.empty": {
+        "key": "*.count.empty",
+        "type": "integer",
+        "min": 0,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 50,
+            "empty": 0,
+            "bytype": {
+                "text": 27,
+                "boolean": 23
+            }
+        },
+        "example": 55,
+        "errors": {
+            "type": [
+                55,
+                19,
+                54,
+                52,
+                45,
+                28,
+                51,
+                7,
+                49,
+                2,
+                53,
+                14,
+                5
+            ]
+        }
+    },
+    "*.count.used": {
+        "key": "*.count.used",
+        "type": "integer",
+        "min": 0,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 50,
+            "empty": 0,
+            "bytype": {
+                "text": 49,
+                "boolean": 1
+            }
+        },
+        "example": 55,
+        "errors": {
+            "type": [
+                55,
+                15,
+                11,
+                7,
+                24,
+                50,
+                57,
+                3,
+                62,
+                38,
+                14,
+                16,
+                4,
+                28,
+                2
+            ]
+        }
+    },
+    "*.created": {
+        "key": "*.created",
+        "type": "datetime",
+        "minlen": "24",
+        "maxlen": "28",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 57,
+            "empty": 0,
+            "bytype": {
+                "datetime": 57
+            }
+        },
+        "example": "2015-07-28T20:02:06.771Z"
+    },
+    "*.errors.boundary.*": {
+        "key": "*.errors.boundary.*",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 3,
+            "empty": 0,
+            "bytype": {
+                "datetime": 3
+            }
+        },
+        "example": "2015-07-28T20:41:04.566Z"
+    },
+    "*.errors.text.*": {
+        "key": "*.errors.text.*",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-19T16:48:32.542Z",
+        "isReferenceable": false
+    },
+    "*.errors.type.*": {
+        "key": "*.errors.type.*",
+        "type": "text",
+        "created": "2015-07-28T20:35:35.518Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 63,
+            "empty": 0,
+            "bytype": {
+                "text": 63
+            }
+        },
+        "example": 4
+    },
+    "*.errors.newval.*": {
+        "key": "*.errors.newval.*",
+        "type": "text",
+        "created": "2015-07-28T20:35:35.518Z",
+        "updated": "",
+        "isReferenceable": false
+    },
+    "*.errors.reference.*": {
+        "key": "*.errors.reference.*",
+        "type": "text",
+        "created": "2015-07-28T20:35:35.518Z",
+        "updated": "",
+        "isReferenceable": false
+    },
+    "*.example": {
+        "key": "*.example",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 39,
+            "empty": 0,
+            "bytype": {
+                "datetime": 7,
+                "text": 23,
+                "integer": 5,
+                "boolean": 4
+            }
+        },
+        "example": "2015-07-28T20:02:06.771Z"
+    },
+    "*.format": {
+        "key": "*.format",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-19T16:48:32.542Z",
+        "isReferenceable": false
+    },
+    "*.isReferenceable": {
+        "key": "*.isReferenceable",
+        "type": "boolean",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 57,
+            "empty": 0,
+            "bytype": {
+                "boolean": 57
+            }
+        },
+        "example": true
+    },
+    "*.isReferenceToKey": {
+        "key": "*.isReferenceToKey",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceToKey": "*.key",
+        "isReferenceable": false,
+        "count": {
+            "used": 1,
+            "empty": 0,
+            "bytype": {
+                "text": 1
+            }
+        },
+        "example": "*.key",
+        "unique": false
+    },
+    "*.key": {
+        "key": "*.key",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": true,
+        "count": {
+            "used": 57,
+            "empty": 0,
+            "bytype": {
+                "text": 57
+            }
+        },
+        "example": "*.boundary-errors",
+        "unique": false
+    },
+    "*.list.*": {
+        "key": "*.list.*",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 14,
+            "empty": 0,
+            "bytype": {
+                "text": 14
+            }
+        },
+        "example": "boolean"
+    },
+    "*.max": {
+        "key": "*.max",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 16,
+            "empty": 14,
+            "bytype": {
+                "text": 1,
+                "datetime": 1
+            }
+        },
+        "nullable": true,
+        "example": "text"
+    },
+    "*.maxlen": {
+        "key": "*.maxlen",
+        "type": "integer",
+        "min": null,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 4,
+            "empty": 0,
+            "bytype": {
+                "integer": 4
+            }
+        },
+        "example": "24"
+    },
+    "*.min": {
+        "key": "*.min",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 16,
+            "empty": 5,
+            "bytype": {
+                "text": 1,
+                "boolean": 9,
+                "datetime": 1
+            }
+        },
+        "nullable": true,
+        "example": "boolean"
+    },
+    "*.minlen": {
+        "key": "*.minlen",
+        "type": "integer",
+        "min": null,
+        "max": null,
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 4,
+            "empty": 0,
+            "bytype": {
+                "integer": 4
+            }
+        },
+        "example": "24"
+    },
+    "*.nullable": {
+        "key": "*.nullable",
+        "type": "boolean",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 27,
+            "empty": 0,
+            "bytype": {
+                "boolean": 27
+            }
+        },
+        "example": true
+    },
+    "*.type": {
+        "key": "*.type",
+        "type": "text",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "list": [
+            "boolean",
+            "date",
+            "time",
+            "datetime",
+            "integer",
+            "number",
+            "text"
+        ],
+        "count": {
+            "used": 56,
+            "empty": 0,
+            "bytype": {
+                "text": 56
+            }
+        },
+        "example": "text"
+    },
+    "*.unique": {
+        "key": "*.unique",
+        "type": "boolean",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 2,
+            "empty": 0,
+            "bytype": {
+                "boolean": 2
+            }
+        },
+        "example": false
+    },
+    "*.updated": {
+        "key": "*.updated",
+        "type": "datetime",
+        "minlen": "24",
+        "maxlen": "28",
+        "created": "2015-07-19T16:48:32.542Z",
+        "updated": "2015-07-29T05:23:50.611Z",
+        "isReferenceable": false,
+        "count": {
+            "used": 57,
+            "empty": 2,
+            "bytype": {
+                "datetime": 55
+            }
+        },
+        "example": "2015-07-29T05:23:49.775Z",
+        "nullable": true
+    }
+}
