@@ -25,6 +25,7 @@ To let the robot do his work, you simply need to
 * then use the tool with a command like ```node index.js datafiles*.json -r path/to/write/result.json```
 
 You would typically set this up on a server that through some schedule job (cron) 
+
 1. downloads the data
 1. feeds the data to the robot
 1. makes the result.json of the robot available via a web-server to the next step
@@ -34,9 +35,9 @@ You would typically set this up on a server that through some schedule job (cron
 
 ```shmdoc``` choose using simply the Google Spreadsheets product to allow both further documenting and immediately publishing the documentation about the data.
 
-TODO: link to addon on google marketplace?
-TODO: link to shmdoc public project https://script.google.com/d/1Yly5JI6v0j-tTycypiaoJPniuyFSG4d_y7Js0ZbGBxHAm240Pcx0v28O/edit?usp=sharing
-TOOD: sync project-code with github
+To use it, you create a [new Google Spreadsheet]() and add the [shmdoc addon](https://chrome.google.com/webstore/detail/naaomibecanamichicadcgokdmhelkfo/) from the addon - marketplace.
+
+The code for the project is available at github, and published from this [apps-project](https://script.google.com/d/1Yly5JI6v0j-tTycypiaoJPniuyFSG4d_y7Js0ZbGBxHAm240Pcx0v28O/edit?usp=sharing)
 
 
 ## 03. Repeat. 
@@ -47,6 +48,7 @@ The good thing is that, the human augmented information in the google-spreadshee
 Doing this will make the robot still do his earlier job (i.e. learn about possible new fields), but additionally it will now check and assert the human undersigned version of the ```shmdoc``` coming from the google-spreadsheet. In doing so, it will list any found value-errors it occured in the (possibly newer datasets).
 
 The easiest way to close this loop is to 
+
 1. publish the shmdoc-spreadsheet as csv straight from google-docs
 1. feed that published uri back into the robot with the ```-b <<uri>>``` switch.
 
@@ -94,7 +96,7 @@ What shmdoc does is just make sure people get to analyze real data (what they ar
 
 The name is pronounced ```sjiemdoc``` (&#643;&#105;&#109;'&#100;&#596;&#107;). And spelled all lowercase ```shmdoc```.
 
-It was meant as a play on 'only the gist of the schema' + plus a 'focus on getting it documented' by a group of people.
+It was meant as a play on 'only the gist (no vowels) of the schema' + plus a 'focus on getting it documented' by a group of people.
 
 ## letting the geek loose 
 
