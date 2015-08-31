@@ -125,10 +125,12 @@ function mergeData(base, uri) {
 
     // read the key column
     if (currentDataRange.getNumRows() > 1) {
-        cursor = currentDataRange.offset(currentFieldToCol.key, 0, currentDataRange.getNumRows() - 1, 1); // first col without first row
+        cursor = currentDataRange.offset(currentFieldToCol.key, 0, currentDataRange.getNumRows(), 1);
         currentKeys = cursor.getValues().map(function (el) { return el[0]; });
         // --> find all the known keys --> by key to row-number
-        currentKeyToRow = currentKeys.reduce(function (s, el, i) {  s[el] = i; return s; }, {});
+        currentKeyToRow = currentKeys.reduce(function (s, el, i) {
+          if (i > 0 ) { s[el] = i; } // first row is header --> don't store
+          return s; }, {});
     }
     result.foundkeys = Object.keys(currentKeyToRow).length;
 
@@ -151,6 +153,7 @@ function mergeData(base, uri) {
     result.totalkeys = keys.length;
     result.mergedkeys = 0;
     result.newkeys = 0;
+
     // process all the keys in the base
     keys.forEach(function (key) {
         var fd = base[key], rownum = currentKeyToRow[key], rowvalues;
