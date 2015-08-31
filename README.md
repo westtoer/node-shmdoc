@@ -61,13 +61,14 @@ If all is well, you have succesfully setup this cycle:
 
 # Known limitations
 
-* The robot currently only reads json. Support for data in xml and csv is under way
+* The robot currently only reads samples in json, xml and csv. We're open for additions that support more.
+* More [suggestions](https://github.com/westtoer/node-shmdoc/issues) and [patches](https://github.com/westtoer/node-shmdoc/pulls) are welcome.
 
 # wtf? // why this froject
 
 ## background
 
-My personal somewhat related and almost relavant experience in this space can be summed up with these events:
+My personal, somewhat related, and almost relavant experience in this space can be summed up as coming from these random events:
 
 ### cs // computer-science
 
@@ -84,7 +85,7 @@ The common knowledge among friends regarding Ikea furniture is
 There.
 You can twist the above in a number of ways, so feel free :)
 
-Here is my read. When faced with (real) people exchanging data through some formal mechanism I see them quickly agreeing on some serialization format (xml, json, csv) - but never taking the time to actually list or describe the information-elements being communicated, nor checking if their claims about the nature of the values really can be asserted.
+Here is my read: When faced with (real) people exchanging data through some formal mechanism I see them quickly agreeing on some serialization format (xml, json, csv) - but never taking the time to actually list or describe the information-elements being communicated, nor checking if their claims about the nature of the values really can be asserted.
 
 And later, when the Master Engineering Peeps emerge from their Ivory Towers up in the Sky (gotta love the view) and see the Silly Dilettantes failing to bootstrap even the simpelest interchange... they mostly end up removing any remaining enthousiasm and motivation by insisting upon a full blown **Schema**.  Ouch.
 
@@ -102,4 +103,4 @@ It was meant as a play on 'only the gist (no vowels) of the schema' + plus a 'fo
 
 The data-structures produced by the shmdoc robot and maintained in the spreadsheet do NOT strictly follow an explicit schema.
 
-Why bother? Since, you can simply consult the [shmdoc on shmdoc](https://docs.google.com/spreadsheets/d/1jwqExbm4tOmwHxSVaX_6nRIeEscitQvbaeuZAMHSlzI/edit?usp=sharing)!
+Why bother? Since, you can simply consult the [shmdoc on shmdoc](https://docs.google.com/spreadsheets/d/1jwqExbm4tOmwHxSVaX_6nRIeEscitQvbaeuZAMHSlzI)!
