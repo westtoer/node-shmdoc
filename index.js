@@ -25,7 +25,7 @@ settings = argv
 
     .describe('level', 'number of root-levels to hide from the keys')
     .alias('l', 'level')
-    .default('level', 1)
+    .default('level', 0)
 
     .demand(1)
 
