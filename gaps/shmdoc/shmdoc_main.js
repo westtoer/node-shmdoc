@@ -33,7 +33,7 @@ function setDocProp(key, val) {
 }
 
 function getSheetId() {
-    SpreadsheetApp.getActiveSheet().getSheetId();
+    return SpreadsheetApp.getActiveSheet().getSheetId();
 }
 
 function getSheetProp(key) {
@@ -98,6 +98,7 @@ function mergeData(base, uri) {
         cursor;
 
     result.origin = uri || "unknown";
+    result.sheetid = getSheetId();
 
     // the main work
     currentDataRange = SpreadsheetApp.getActiveSheet().getDataRange();
